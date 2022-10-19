@@ -124,6 +124,16 @@ public class DataUtest {
 
     private  String strPASSWORD;
 
+    public String getStrFinalText() {
+        return strFinalText;
+    }
+
+    public void setStrFinalText(String strFinalText) {
+        this.strFinalText = strFinalText;
+    }
+
+    private  String strFinalText;
+
 
 
 
