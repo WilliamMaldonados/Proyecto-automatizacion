@@ -86,8 +86,44 @@ public class DataUtest {
     private String strCOUNTRY;
 
 
-    private  String strDEVICe;
-    Pri
+    public String getStrDEVICE() {
+        return strDEVICE;
+    }
+
+    public void setStrDEVICE(String strDEVICE) {
+        this.strDEVICE = strDEVICE;
+    }
+
+    public String getStrMOVIL() {
+        return strMOVIL;
+    }
+
+    public void setStrMOVIL(String strMOVIL) {
+        this.strMOVIL = strMOVIL;
+    }
+
+    public String getStrOS() {
+        return strOS;
+    }
+
+    public void setStrOS(String strOS) {
+        this.strOS = strOS;
+    }
+
+    private  String strDEVICE;
+    private  String strMOVIL;
+    private  String strOS;
+
+    public String getStrPASSWORD() {
+        return strPASSWORD;
+    }
+
+    public void setStrPASSWORD(String strPASSWORD) {
+        this.strPASSWORD = strPASSWORD;
+    }
+
+    private  String strPASSWORD;
+
 
 
 

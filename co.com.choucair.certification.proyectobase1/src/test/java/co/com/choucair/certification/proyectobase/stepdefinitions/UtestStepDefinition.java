@@ -1,8 +1,6 @@
 package co.com.choucair.certification.proyectobase.stepdefinitions;
 import co.com.choucair.certification.proyectobase.model.DataUtest;
-import co.com.choucair.certification.proyectobase.tasks.Abrir;
-import co.com.choucair.certification.proyectobase.tasks.FillAddress;
-import co.com.choucair.certification.proyectobase.tasks.FillData;
+import co.com.choucair.certification.proyectobase.tasks.*;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -24,8 +22,9 @@ public class UtestStepDefinition {
 
     @When("^he enters the data into the form$")
     public void heEntersTheDataIntoTheForm(List<DataUtest> dataUtestList)throws Exception {
-        OnStage.theActorInTheSpotlight().attemptsTo(FillData.ThePage(dataUtestList), FillAddress.ThePage(dataUtestList));
-
+        OnStage.theActorInTheSpotlight().attemptsTo(FillData.ThePage(dataUtestList), FillAddress.ThePage(dataUtestList),
+                Filldevices.ThePage(dataUtestList), Fillfinal.Thepage(dataUtestList)
+        );
 
     }
 
